@@ -5,6 +5,7 @@ import ToDoList from './components/todolist';
 import useToDoList from './hooks/usetodolist';
 import todoService from './services/todoservice';
 
+
 const App = () => {
   const { todos, addTask, toggleTaskCompletion, deleteTask } = useToDoList();
 
@@ -13,6 +14,7 @@ const App = () => {
       <Header />
       <ToDoForm addTask={addTask} />
       <ToDoList todos={todos} toggleTaskCompletion={toggleTaskCompletion} />
+      
     </div>
   );
 };
