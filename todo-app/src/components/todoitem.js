@@ -8,7 +8,9 @@ const ToDoItem = ({ todo, toggleTaskCompletion }) => {
       }}
       onClick={() => toggleTaskCompletion(todo.id)}
     >
-      {todo.task}
+      <h3>{todo.title}</h3>
+      <p>{todo.description}</p>
+      <p>Due Date: {todo.dueDate}</p>
     </li>
   );
 };
