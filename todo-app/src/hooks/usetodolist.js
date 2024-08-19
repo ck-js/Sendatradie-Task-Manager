@@ -5,24 +5,24 @@ const useToDoList = () => {
   const [editingTodo, setEditingTodo] = useState(null);  
 
 
-
   const startEditingTask = (todo) => {
-    alert(todo.title)
+    // alert(todo)
     setEditingTodo(todo);
+    
   };
 
-  const updateTask = (id, title, description) => {
+  const updateTask = (id, title, description, dueDate) => {
     setTodos((prevTodos) =>
       prevTodos.map((todo) =>
-        todo.id === id ? { ...todo, title, description } : todo
+        todo.id === id ? { ...todo, title, description, dueDate } : todo
       )
     );
     setEditingTodo(null);
+    
+    
   };
-
-
-
-  console.log(todos);
+  
+  // console.log(todos);
   const addTask = (taskTitle, taskDescription, taskDueDate) => {
     setTodos([...todos, { id: Date.now(),
        title: taskTitle, description: taskDescription,
@@ -47,5 +47,8 @@ const useToDoList = () => {
 };
 
 export default useToDoList;
+
+
+
 
 

@@ -9,7 +9,7 @@ const ToDoItem = ({ todo, toggleTaskCompletion, startEditingTask,
   // const { editingTodo, updateTask } = useToDoList();
 
   const handleEditClick = (e) => {
-    
+e.stopPropagation()
     startEditingTask(todo);
   };
 
@@ -29,7 +29,7 @@ const ToDoItem = ({ todo, toggleTaskCompletion, startEditingTask,
       style={{
         textDecoration: todo.completed ? 'line-through' : 'none',
       }}
-      // onClick={() => toggleTaskCompletion(todo.id)}
+      onClick={() => toggleTaskCompletion(todo.id)}
     >
       <h3>{todo.title}</h3>
       <p>{todo.description}</p>
