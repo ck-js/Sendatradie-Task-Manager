@@ -18,11 +18,10 @@ const useToDoList = () => {
       )
     );
     setEditingTodo(null);
-    
-    
+  
   };
   
-  // console.log(todos);
+  console.log(todos);
   const addTask = (taskTitle, taskDescription, taskDueDate) => {
     setTodos([...todos, { id: Date.now(),
        title: taskTitle, description: taskDescription,
@@ -47,8 +46,3 @@ const useToDoList = () => {
 };
 
 export default useToDoList;
-
-
-
-
-

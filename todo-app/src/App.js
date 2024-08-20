@@ -21,6 +21,7 @@ const App = () => {
       editingTodo={editingTodo}
       startEditingTask={startEditingTask}
       updateTask={updateTask}
+      deleteTask={deleteTask}
 
       />
       

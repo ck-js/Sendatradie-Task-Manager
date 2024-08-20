@@ -4,9 +4,10 @@ import useToDoList from '../hooks/usetodolist';
 
 
 const ToDoItem = ({ todo, toggleTaskCompletion, startEditingTask,
-  editingTodo, updateTask
+  editingTodo, updateTask, deleteTask
  }) => {
   // const { editingTodo, updateTask } = useToDoList();
+  // const { deleteTask } = useToDoList();
 
   const handleEditClick = (e) => {
 e.stopPropagation()
@@ -22,7 +23,11 @@ e.stopPropagation()
     );
   }
 
-
+  const handleDeleteClick = (e) => {
+    e.stopPropagation()
+    alert(todo.title)
+    deleteTask(todo.id);
+  }
 
   return (
     <li
@@ -35,6 +40,7 @@ e.stopPropagation()
       <p>{todo.description}</p>
       <p>Due Date: {todo.dueDate}</p>
       <button onClick={handleEditClick}>Edit</button>
+      <button onClick={handleDeleteClick}>Delete</button>
     </li>
   );
 };

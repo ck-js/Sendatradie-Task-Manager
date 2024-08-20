@@ -2,7 +2,7 @@ import React from 'react';
 import ToDoItem from './todoitem';
 
 const ToDoList = ({ todos, toggleTaskCompletion,
-  editingTodo, startEditingTask, updateTask
+  editingTodo, startEditingTask, updateTask, deleteTask
  }) => {
   return (
     <ul>
@@ -14,6 +14,8 @@ const ToDoList = ({ todos, toggleTaskCompletion,
           startEditingTask={startEditingTask}
           updateTask={updateTask}
           editingTodo={editingTodo}
+          deleteTask={deleteTask}
+
 
 
         />
