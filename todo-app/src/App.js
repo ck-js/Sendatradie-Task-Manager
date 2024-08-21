@@ -8,7 +8,8 @@ import todoService from './services/todoservice';
 
 const App = () => {
   const { todos, addTask, toggleTaskCompletion, deleteTask,
-    startEditingTask, editingTodo, updateTask
+    startEditingTask, editingTodo, updateTask, visibleTodos,
+    currentPage, totalPages, setCurrentPage,
    } = useToDoList();
 
   return (
@@ -16,12 +17,15 @@ const App = () => {
       <Header />
       <ToDoForm addTask={addTask} />
       <ToDoList 
-      todos={todos} 
+      todos={visibleTodos} 
       toggleTaskCompletion={toggleTaskCompletion}
       editingTodo={editingTodo}
       startEditingTask={startEditingTask}
       updateTask={updateTask}
       deleteTask={deleteTask}
+currentPage={currentPage}
+totalPages={totalPages}
+setCurrentPage={setCurrentPage}
 
       />
       
