@@ -1,5 +1,7 @@
 import React from 'react';
 import Header from './components/header';
+import WeatherCard from './components/WeatherCard';
+import useWeather from './hooks/useWeather';
 import ToDoForm from './components/todoform';
 import ToDoList from './components/todolist';
 import useToDoList from './hooks/usetodolist';
@@ -12,9 +14,17 @@ const App = () => {
     currentPage, totalPages, setCurrentPage,
    } = useToDoList();
 
+   const { weatherData, isLoading, error } = useWeather();
+
+
   return (
     <div>
       <Header />
+      <div>
+      {isLoading && <p>Loading...</p>}
+      {error && <p>Error: {error.message}</p>}
+      <WeatherCard weatherData={weatherData} />
+    </div>
       <ToDoForm addTask={addTask} />
       <ToDoList 
       todos={visibleTodos} 
