@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Header from './components/header';
 import WeatherCard from './components/WeatherCard';
 import useWeather from './hooks/useWeather';

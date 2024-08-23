@@ -39,8 +39,11 @@ e.stopPropagation()
       <h3>{todo.title}</h3>
       <p>{todo.description}</p>
       <p>Due Date: {todo.dueDate}</p>
+      <div className='edit-delete-container'>
       <button onClick={handleEditClick}>Edit</button>
       <button onClick={handleDeleteClick}>Delete</button>
+      </div>
+      
     </li>
   );
 };

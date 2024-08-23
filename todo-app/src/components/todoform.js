@@ -53,6 +53,7 @@ const handleTitleChange = (event) => {
       />
       <br></br>
       <textarea
+      rows={5}
         placeholder="Enter a Description"
         value={taskDescription}
         onChange={handleDescriptionChange}
