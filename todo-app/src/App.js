@@ -8,7 +8,7 @@ import ToDoList from './components/todolist';
 import useToDoList from './hooks/usetodolist';
 import todoService from './services/todoservice';
 
-import logo from './logo.jpg'; 
+import logo from './logo2.jpg'; 
 
 
 

@@ -33,6 +33,7 @@ e.stopPropagation()
     <li
       style={{
         textDecoration: todo.completed ? 'line-through' : 'none',
+        opacity: todo.completed ? 0.5 : 1, 
       }}
       onClick={() => toggleTaskCompletion(todo.id)}
     >
