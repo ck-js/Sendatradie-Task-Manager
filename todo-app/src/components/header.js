@@ -1,9 +1,11 @@
 import React from 'react';
+import logo from '../logo.jpg'; 
+
 
 const Header = () => {
   return (
     <header>
-      <h1>SENDATRADIE Task Manager</h1>
+      <img src={logo} alt='sendatradie logo' />
     </header>
   );
 };

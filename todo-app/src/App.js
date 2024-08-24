@@ -8,6 +8,9 @@ import ToDoList from './components/todolist';
 import useToDoList from './hooks/usetodolist';
 import todoService from './services/todoservice';
 
+import logo from './logo.jpg'; 
+
+
 
 const App = () => {
   const { todos, addTask, toggleTaskCompletion, deleteTask,
@@ -22,7 +25,8 @@ const App = () => {
     <div>
       <Header />
       <div className='weather-container'>
-      {isLoading && <p>Loading...</p>}
+      {isLoading &&
+      <img src={logo} alt='loading spinner' id='loading-spinner'/>} 
       {error && <p>Error: {error.message}</p>}
       <WeatherCard weatherData={weatherData} />
     </div>

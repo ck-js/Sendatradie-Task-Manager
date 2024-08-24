@@ -15,8 +15,11 @@ const useWeather = () => {
         );
         const { latitude, longitude } = position.coords;
         const data = await weatherService.fetchWeatherData(latitude, longitude);
-        setWeatherData(data);
-        setIsLoading(false);
+        
+        setTimeout(() => {
+          setWeatherData(data);
+          setIsLoading(false);
+        }, 2000); 
       } catch (err) {
         setError(err);
         setIsLoading(false);
