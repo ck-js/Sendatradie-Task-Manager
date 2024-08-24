@@ -1,9 +1,212 @@
+@media (min-width: 769px) {
+
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+    font-size: 22px;
+    background-color: black;
+    /* color: #34B388; */
+    color: #fff ;
+    text-align: center;
+    
+    
+  }
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  button {
+    background-color: #34B388;
+    font-size: 22px;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    
+  }
+  span {
+    font-size: 28px;
+  }
+  .todo-list p {
+    font-size: 20px;
+    text-transform: uppercase;
+    
+  }
+  .todo-list .todos-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    
+  }
+  .todo-list li {
+    background: linear-gradient(135deg,#771f58, #771f58, #2A9D8F);
+    width: 30%;
+    border-radius: 10px;
+  }
+  
+  .popup-content {
+      padding: 100px 0;
+    
+    z-index: 2;
+  }
+  form {
+    background: linear-gradient(135deg, #34B388, #2A9D8F, #771f58);
+    width: 60%;
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:60px 0;
+    border-radius: 5px;
+  } 
+  form input[type="text"] {
+    padding: 10px;
+    border: 1px solid #34B388;
+    border-radius: 5px;
+    outline: none;
+    width: 80%;
+  }
+  form textarea {
+    padding: 10px;
+    border: 1px solid #34B388;
+    border-radius: 5px;
+    outline: none;
+    width: 80%;
+    
+    
+  }
+  form input[type="date"] {
+    padding: 10px;
+    border: 1px solid #34B388;
+    border-radius: 5px;
+    outline: none;
+    width: 60%;
+  }
+  li {
+    cursor: pointer;
+  }
+  
+  
+  .edit-delete-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+  margin: 40px 0 20px 0;
+  }
+  li button:nth-of-type(1) {
+    width: 60%;
+  }
+  li {
+    cursor: pointer;
+  }
+  
+  .edit-delete-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+    margin: 40px 0 20px 0;
+  }
+  li button:nth-of-type(2) {
+    background: linear-gradient(135deg, #FF6B6B, #FF8E8E);
+    transition: background 0.3s ease;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+  }
+  li button:nth-of-type(2):hover {
+    background: linear-gradient(135deg, #FF4C4C, #FF7A7A);
+  }
+  
+  
+  li {
+    list-style-type: none;
+    padding: 30px 0;
+    border-bottom: 1px solid #34B388;
+  }
+  
+  .todo-list {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 200px;
+    row-gap: 50px;
+  }
+  .todo-list h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  }
+  .todo-list p {
+    font-size: 18px;
+    text-transform: uppercase;
+    }
+  
+  .popup-content {  
+    padding: 100px 0;
+    width: 100%;
+    z-index: 2;
+    
+    }
+    .previous-next-container {  
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+  
+  
+    }
+  .weather-container {
+    background: linear-gradient(135deg, #34B388, #2A9D8F, #771f58);
+    border-radius: 20px;
+    padding: 20px;
+    width: 35%;
+    
+  }
+  .weather-container p:nth-of-type(1) {
+  font-size: 50px;
+  color: black;
+  font-weight: 900;
+  }
+
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
 body {
   margin: 0;
   padding: 0;
   font-family: poppins;
   background-color: black;
-  color: #34B388;
+  /* color: #34B388; */
+  color: #fff ;
   text-align: center;
   
   
@@ -27,10 +230,20 @@ button {
   text-transform: uppercase;
   
 }
-.todo-list ul {
-  width: 80%;
+.todo-list .todos-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  
 }
-
+.todo-list li {
+  background: linear-gradient(135deg,#771f58, #771f58, #2A9D8F);
+  width: 90%;
+  border-radius: 10px;
+}
 
 .popup-content {
     padding: 100px 0;
@@ -39,14 +252,15 @@ button {
 }
 form {
   background: linear-gradient(135deg, #34B388, #2A9D8F, #771f58);
+  width: 100%;
     display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   row-gap: 10px;
   margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 40px 0;
+  margin-bottom: 40px;
+  padding:60px 0;
   border-radius: 5px;
 } 
 form input[type="text"] {
@@ -121,12 +335,13 @@ li {
 }
 
 .todo-list {
-  padding: 150px 0;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+  padding-bottom: 200px;
+  row-gap: 50px;
 }
 .todo-list h3 {
 font-size: 24px;
@@ -136,11 +351,32 @@ text-transform: uppercase;
   font-size: 18px;
   text-transform: uppercase;
   }
-.popup-content {
-  
+
+.popup-content {  
   padding: 100px 0;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
   z-index: 2;
   
   }
+  .previous-next-container {  
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+
+  }
+.weather-container {
+  background: linear-gradient(135deg, #34B388, #2A9D8F, #771f58);
+  border-radius: 20px;
+  padding: 20px;
+  width: 50%;
+  
+}
+.weather-container p:nth-of-type(1) {
+  font-size: 40px;
+  color: black;
+  font-weight: 900;
+  }
+}

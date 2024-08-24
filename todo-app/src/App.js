@@ -21,7 +21,7 @@ const App = () => {
   return (
     <div>
       <Header />
-      <div>
+      <div className='weather-container'>
       {isLoading && <p>Loading...</p>}
       {error && <p>Error: {error.message}</p>}
       <WeatherCard weatherData={weatherData} />

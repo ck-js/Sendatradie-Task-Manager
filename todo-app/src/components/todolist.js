@@ -6,7 +6,7 @@ const ToDoList = ({ todos, toggleTaskCompletion,
  }) => {
   return (
     <div className='todo-list'>
-    <ul>
+    <div className='todos-container'>
       {todos.map((todo) => (
         <ToDoItem
           key={todo.id}
@@ -19,15 +19,15 @@ const ToDoList = ({ todos, toggleTaskCompletion,
         />
       ))}
 
-    </ul>    
-    <div>
-        {currentPage > 1 && (
+    </div>    
+    <div className='previous-next-container'>
+        {currentPage >= 1 && (
           <button onClick={() => setCurrentPage(currentPage - 1)}>Prev</button>
         )}
         <span>
           Page {currentPage} of {totalPages}
         </span>
-        {currentPage < totalPages && (
+        {currentPage <= totalPages && (
           <button onClick={() => setCurrentPage(currentPage + 1)}>Next</button>
         )}
       </div>
