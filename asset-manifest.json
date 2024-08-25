@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/ck-js/Sendatradie-Task-Manager/static/css/main.465354d8.css",
-    "main.js": "/ck-js/Sendatradie-Task-Manager/static/js/main.e750e454.js",
-    "static/js/453.ad6eb26e.chunk.js": "/ck-js/Sendatradie-Task-Manager/static/js/453.ad6eb26e.chunk.js",
-    "static/media/logo2.jpg": "/ck-js/Sendatradie-Task-Manager/static/media/logo2.19bdbf2821b6331b0ad9.jpg",
-    "static/media/logo.jpg": "/ck-js/Sendatradie-Task-Manager/static/media/logo.6e678ef155fc39113a4b.jpg",
-    "index.html": "/ck-js/Sendatradie-Task-Manager/index.html",
-    "main.465354d8.css.map": "/ck-js/Sendatradie-Task-Manager/static/css/main.465354d8.css.map",
-    "main.e750e454.js.map": "/ck-js/Sendatradie-Task-Manager/static/js/main.e750e454.js.map",
-    "453.ad6eb26e.chunk.js.map": "/ck-js/Sendatradie-Task-Manager/static/js/453.ad6eb26e.chunk.js.map"
+    "main.css": "/Sendatradie-Task-Manager/static/css/main.465354d8.css",
+    "main.js": "/Sendatradie-Task-Manager/static/js/main.7221dff1.js",
+    "static/js/453.ad6eb26e.chunk.js": "/Sendatradie-Task-Manager/static/js/453.ad6eb26e.chunk.js",
+    "static/media/logo2.jpg": "/Sendatradie-Task-Manager/static/media/logo2.19bdbf2821b6331b0ad9.jpg",
+    "static/media/logo.jpg": "/Sendatradie-Task-Manager/static/media/logo.6e678ef155fc39113a4b.jpg",
+    "index.html": "/Sendatradie-Task-Manager/index.html",
+    "main.465354d8.css.map": "/Sendatradie-Task-Manager/static/css/main.465354d8.css.map",
+    "main.7221dff1.js.map": "/Sendatradie-Task-Manager/static/js/main.7221dff1.js.map",
+    "453.ad6eb26e.chunk.js.map": "/Sendatradie-Task-Manager/static/js/453.ad6eb26e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.465354d8.css",
-    "static/js/main.e750e454.js"
+    "static/js/main.7221dff1.js"
   ]
 }
