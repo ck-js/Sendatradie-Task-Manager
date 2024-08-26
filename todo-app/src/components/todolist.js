@@ -22,12 +22,14 @@ const ToDoList = ({ todos, toggleTaskCompletion,
     </div>    
     <div className='previous-next-container'>
         {currentPage >= 1 && (
-          <button onClick={() => setCurrentPage(currentPage - 1)}>Prev</button>
+          <button onClick={() => setCurrentPage(currentPage - 1)}
+          style={{ display: currentPage === 1 ? 'none' : 'inline-block' }}
+          >Prev</button>
         )}
         <span>
           Page {currentPage} of {totalPages}
         </span>
-        {currentPage <= totalPages && (
+        {currentPage < totalPages && (
           <button onClick={() => setCurrentPage(currentPage + 1)}>Next</button>
         )}
       </div>
