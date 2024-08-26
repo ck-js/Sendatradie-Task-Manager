@@ -57,7 +57,7 @@
     
   }
   .todo-list li {
-    background: linear-gradient(135deg,#771f58, #771f58, #2A9D8F);
+    background: linear-gradient(135deg,#771f58, #771f58, #c24596 );
     width: 30%;
     border-radius: 10px;
   }
@@ -88,6 +88,7 @@
     border-radius: 5px;
     outline: none;
     width: 80%;
+    
   }
   form textarea {
     padding: 10px;
@@ -104,6 +105,7 @@
     border-radius: 5px;
     outline: none;
     width: 60%;
+    margin-bottom: 40px;
   }
   li {
     cursor: pointer;
@@ -204,7 +206,7 @@ grid-area: middle;
   
 
   .weather-container {
-    background: linear-gradient(135deg, #b3b334, #2A9D8F, #771f58);
+    background: linear-gradient(135deg, #93e7cb, #2A9D8F, #39d8c6);
     border-radius: 20px;
     padding: 20px;
     width: 35%;
@@ -286,7 +288,7 @@ button {
   
 }
 .todo-list li {
-  background: linear-gradient(135deg,#771f58, #771f58, #2A9D8F);
+  background: linear-gradient(135deg,#771f58, #771f58, #c24596 );
   width: 90%;
   border-radius: 10px;
 }
@@ -331,6 +333,7 @@ form input[type="date"] {
   border-radius: 5px;
   outline: none;
   width: 60%;
+  margin-bottom: 20px;
 }
 li {
   cursor: pointer;
@@ -408,7 +411,7 @@ text-transform: uppercase;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "prev middle next";
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
     align-items: center;
     margin: 20px 0;
@@ -431,10 +434,12 @@ text-transform: uppercase;
 
 
 .weather-container {
-  background: linear-gradient(135deg, #34B388, #2A9D8F, #771f58);
+  background: linear-gradient(135deg, #93e7cb, #2A9D8F, #39d8c6);
   border-radius: 20px;
   padding: 20px;
-  width: 50%;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
   
 }
 .weather-container p:nth-of-type(1) {
